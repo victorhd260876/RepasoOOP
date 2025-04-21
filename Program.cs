@@ -1,10 +1,20 @@
-﻿namespace RepasoOOP
+﻿namespace RepasoOOP;
+
+class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        //Console.WriteLine("Hello, World!");
+        //var Viviendas = new Viviendas(); // Instanciando clase con var
+        var Recibos = new Recibos();
+
+        Console.WriteLine(Recibos.tipo);
+        Recibos.TipoVenta();
+
+        var Ticket = new Ticket();
+        Ticket.TipoVenta();
+
+        
+
     }
 }
